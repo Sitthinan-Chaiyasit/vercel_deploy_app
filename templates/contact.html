@@ -1,0 +1,46 @@
+
+{% block content %}
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-7">
+            <div class="card shadow-lg border-0">
+                <div class="card-body">
+                    <h2 class="card-title text-center mb-4">ช่องทางการติดต่อ</h2>
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">ชื่อของคุณ</label>
+                            <input type="text" class="form-control" id="name" placeholder="กรอกชื่อของคุณ">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">อีเมล</label>
+                            <input type="email" class="form-control" id="email" placeholder="your@email.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">ข้อความ</label>
+                            <textarea class="form-control" id="message" rows="4" placeholder="เขียนข้อความของคุณที่นี่"></textarea>
+                        </div>
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary">ส่งข้อความ</button>
+                        </div>
+                    </form>
+                    <hr class="my-4">
+                    <div class="text-center">
+                        <p>
+                            <i class="fas fa-phone-alt me-2"></i>
+                            <a href="tel:080999999" class="text-decoration-none">080-999-9999</a>
+                        </p>
+                        <p>
+                            <i class="fas fa-envelope me-2"></i>
+                            <a href="mailto:peter@email.com" class="text-decoration-none">peter@email.com</a>
+                        </p>
+                        <p>
+                            <i class="fab fa-facebook me-2"></i>
+                            <a href="https://facebook.com/" target="_blank" class="text-decoration-none">Facebook</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
